@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css" />
+        <link rel="stylesheet" type="text/css" href="css/qgis2web.css">
+        <link rel="stylesheet" href="css/label.css" />
+        <link rel="stylesheet" href="css/MarkerCluster.css" />
+        <link rel="stylesheet" href="css/MarkerCluster.Default.css" />
+        <script src="js/leaflet.js"></script>
+        <script src="js/OSMBuildings-Leaflet.js"></script>
+        <script src="js/label.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/leaflet.markercluster.js"></script>
+        <style>
+        #map {
+            width: 790px;
+            height: 534px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="data/json_lakes0.js"></script>
+        <script src="data/json_pipelines1.js"></script>
+        <script src="data/json_airports2.js"></script>
+        <script>
+        L.ImageOverlay.include({
+            getBounds: function () {
+                return this._bounds;
+            }
+        });
+        var map = L.map('map', {
+            measureControl:true,
+            zoomControl:true, maxZoom:28, minZoom:1
+        })
+
+        map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
+        var feature_group = new L.featureGroup([]);
+        var bounds_group = new L.featureGroup([]);
+        var raster_group = new L.LayerGroup([]);
+        var basemap0 = L.tileLayer('http://{s}.www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            maxZoom: 28
+        });
+        basemap0.addTo(map);
+        var initialOrder = new Array();
+        var layerOrder = new Array();
+        function stackLayers() {
+            for (index = 0; index < initialOrder.length; index++) {
+                map.removeLayer(initialOrder[index]);
+                map.addLayer(initialOrder[index]);
+            }
+            if (bounds_group.getLayers().length) {
+                map.fitBounds(bounds_group.getBounds());
+            }
+        }
+        function restackLayers() {
+            for (index = 0; index < layerOrder.length; index++) {
+                layerOrder[index].bringToFront();
+            }
+        }
+        layerControl = L.control.layers({},{},{collapsed:false});
+
+        function doStylelakes0(feature) {
+            return {
+                weight: 0.26,
+                color: '#000000',
+                fillColor: '#038f86',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                opacity: 1.0,
+                fillOpacity: 1.0
+            };
+        }
+        var json_lakes0JSON = new L.geoJson(json_lakes0, {
+            style: doStylelakes0
+        });
+        layerOrder[layerOrder.length] = json_lakes0JSON;
+        bounds_group.addLayer(json_lakes0JSON);
+        initialOrder[initialOrder.length] = json_lakes0JSON;
+        feature_group.addLayer(json_lakes0JSON);
+
+        function doStylepipelines1(feature) {
+            return {
+                weight: 1.04,
+                color: '#7cb93e',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                opacity: 1.0
+            };
+        }
+        var json_pipelines1JSON = new L.geoJson(json_pipelines1, {
+            style: doStylepipelines1
+        });
+        layerOrder[layerOrder.length] = json_pipelines1JSON;
+        bounds_group.addLayer(json_pipelines1JSON);
+        initialOrder[initialOrder.length] = json_pipelines1JSON;
+        feature_group.addLayer(json_pipelines1JSON);
+
+        function doStyleairports2() {
+            return {
+                radius: 2.0,
+                fillColor: '#08e037',
+                color: '#000000',
+                weight: 0.0,
+                opacity: 1.0,
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                fillOpacity: 1.0
+            }
+        }
+        function doPointToLayerairports2(feature, latlng) {
+            return L.circleMarker(latlng, doStyleairports2())
+        }
+        var json_airports2JSON = new L.geoJson(json_airports2, {
+            pointToLayer: doPointToLayerairports2
+            });
+        layerOrder[layerOrder.length] = json_airports2JSON;
+
+        bounds_group.addLayer(json_airports2JSON);
+        initialOrder[initialOrder.length] = json_airports2JSON;
+        feature_group.addLayer(json_airports2JSON);
+        raster_group.addTo(map);
+        feature_group.addTo(map);
+        stackLayers();
+        map.on('overlayadd', restackLayers);
+        </script>
+    </body>
+</html>
