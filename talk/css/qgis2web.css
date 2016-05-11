@@ -8,9 +8,23 @@ body {
     background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
 }
 
+p {
+    font-family: 'Sorts Mill Goudy', Arial, sans-serif;
+    font-size: 100px;
+    line-height: 0.75em;
+    letter-spacing: -1px;
+}
+
 strong {
     font-weight: normal;
+}
+
+.red strong {
     color: #c66;
+}
+
+.green strong {
+    color: #696;
 }
 
 .slide {
@@ -27,11 +41,6 @@ strong {
 
     color: rgb(102, 102, 102);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
-
-    font-family: 'Sorts Mill Goudy', Arial, sans-serif;
-    font-size: 30px;
-    line-height: 36px;
-    letter-spacing: -1px;
 }
 
 .step {
@@ -49,9 +58,6 @@ strong {
 
 .slide p {
     display: block;
-    font-size: 100px;
-    line-height: 0.75em;
-
     margin-top: 200px;
     width: 600px;
     margin-left: auto;
