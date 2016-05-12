@@ -13,10 +13,13 @@ p {
     font-size: 100px;
     line-height: 0.75em;
     letter-spacing: -1px;
+    color: rgb(102, 102, 102);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 }
 
 strong {
     font-weight: normal;
+    text-shadow: 0px 2px 2px #555;
 }
 
 .red strong {
@@ -25,6 +28,10 @@ strong {
 
 .green strong {
     color: #696;
+}
+
+.blue strong {
+    color: #69c;
 }
 
 .slide {
@@ -38,9 +45,6 @@ strong {
     border: 1px solid rgba(0, 0, 0, .3);
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
-
-    color: rgb(102, 102, 102);
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 }
 
 .step {
@@ -70,7 +74,7 @@ strong {
 
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.3;
+    opacity: 0;
 
     -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
