@@ -85,12 +85,12 @@
 
             <div id="broke" class="step blue" data-x="4500" data-y="2000">
                 <p>But the <em>money</em><br /><strong>ran out</strong>,<br />so we tried...</p>
-                <div class="notes">Either the Tories thought we had finished Implementing eGovernment, or they didn't want o pay for it any more</div>
+                <div class="notes">Either the Tories thought we had finished Implementing eGovernment, or they didn't want to pay for it any more</div>
             </div>
 
             <div id="opensource" class="step green" data-x="3750" data-y="2000" data-z="-3000">
                 <p><em style="padding-left: 2em;">open</em><br /><strong style="padding-left: 2.75em;">source</strong></p>
-                <div class="notes">I coud go on at very, very great length about open-source versus proprietary, but you've all chosen to come to an open source conference, so I'll leave preaching to the converted where it bleongs. Twitter.</div>
+                <div class="notes">I could go on at very, very great length about open-source versus proprietary, but you've all chosen to come to an open source conference, so I'll leave preaching to the converted where it belongs. Twitter.</div>
             </div>
 
             <div id="mgos" class="step green" data-x="3750" data-y="3000" data-z="-3000">
@@ -100,31 +100,50 @@
 
             <div id="mapbuilder" class="step green" data-x="5250" data-y="3000" data-z="-3000">
                 <p><img src="img/postgis.svg" style="padding-left: 0.5em;" /><br /><img src="img/geoserver.png" /><br /><img src="img/ol2.png" style="padding-left: 3em;" /></p>
-                <div class="notes"></div>
+                <div class="notes">Built for NPs by contractors. Nearly wonderful, but missed the mark in crucial ways:
+                        <ul>
+                            <li>form-based</li>
+                            <li>no client knowledge of technologies</li>
+                            <li>difficult to maintain (eg GeoServer and PostGIS data out of sync)</li>
+                            <li>told by developer not to upgrade the component parts</li>
+                            <li>written for us, and only ever really used by us - no wider use, no support, no growth, no momentum, no community</li>
+                        </ul>
+                </div>
             </div>
 
             <div id="qgis" class="step green" data-x="3750" data-y="4000" data-z="-3000">
                 <p><img src="img/qgis.svg" /></p>
+                <div class="notes">Started to replace MapInfo - never looked back. Probably the best open-source software I've ever come across. No web export, but supports plugins, including:</div>
             </div>
 
             <div id="qgis2leaf" class="step green" data-x="5250" data-y="4000" data-z="-3000">
                 <p><em>qgis</em>2<strong>leaf</strong></p>
+                <div class="notes">Export your QGIS project to Leaflet. Written by Riccardo Klinger. I contributed a lot to get it to do what we needed (eg WFS layers, British National Grid)</div>
             </div>
 
-            <div id="qgis-ol3" class="step green" data-x="6750" data-y="4000" data-z="-3000">
+            <div id="codequality" class="step green" data-x="6750" data-y="4000" data-z="-3000">
+                <p><img src="img/codequalityxkcd.png" /></p>
+                <div class="notes">Riccardo and I were both beginners...</div>
+            </div>
+
+            <div id="qgis-ol3" class="step green" data-x="8250" data-y="4000" data-z="-3000">
                 <p><em>qgis</em>-<strong>ol3</strong></p>
+                <div class="notes">Victor Olaya. With preview window, layer groups. Well coded.</div>
             </div>
 
             <div id="qgis2web" class="step yellow" data-x="6750" data-y="4000" data-z="-3000" data-rotate-x="90" data-rotate-y="90">
                 <p><img src="img/qgis2web.svg" style="padding-left: 1.4em;" /><br /><em>qgis</em>2<strong>web</strong></p>
+                <div class="notes">Paolo Cavallini proposed, Riccardo and Victor agreed, I took it on</div>
             </div>
 
             <div id="api" class="step yellow" data-x="6750" data-y="4000" data-z="-1500" data-rotate-x="90" data-rotate-y="90">
                 <p><em>QGIS</em> <strong>API</strong></p>
+                <div class="notes">Programmatic access to the functions of a program - QGIS has the best I've come across</div>
             </div>
 
             <div id="python" class="step yellow" data-x="6750" data-y="5500" data-z="-1500" data-rotate-x="90" data-rotate-y="90">
                 <p><img src="img/python.svg" /></p>
+                <div class="notes">I'd heard of it...</div>
             </div>
 
             <div id="pythonxkcd" class="step yellow" data-x="6750" data-y="7000" data-z="-1500" data-rotate-x="90" data-rotate-y="90">
@@ -133,18 +152,22 @@
 
             <div id="js" class="step yellow" data-x="6750" data-y="4000" data-z="0" data-rotate-x="90" data-rotate-y="90">
                 <p><img src="img/js.png" /></p>
+                <div class="notes">JS != jQuery</div>
             </div>
 
-            <div id="leaflet" class="step yellow" data-x="6750" data-y="5500" data-z="0" data-rotate-x="90" data-rotate-y="90">
-                <p><img src="img/leaflet.svg" /></p>
-            </div>
-
-            <div id="ol3" class="step yellow" data-x="6750" data-y="7000" data-z="0" data-rotate-x="90" data-rotate-y="90">
+            <div id="ol3" class="step yellow" data-x="6750" data-y="5500" data-z="0" data-rotate-x="90" data-rotate-y="90">
                 <p><img src="img/ol.svg" style="padding-left: 3em;" /><br /><strong>OpenLayers 3</strong></p>
+                <div class="notes">Much slicker than our old OL2</div>
+            </div>
+
+            <div id="leaflet" class="step yellow" data-x="6750" data-y="7000" data-z="0" data-rotate-x="90" data-rotate-y="90">
+                <p><img src="img/leaflet.svg" /></p>
+                <div class="notes">Simpler, leaner</div>
             </div>
 
             <div id="qt" class="step yellow" data-x="6750" data-y="4000" data-z="1000" data-rotate-x="90" data-rotate-y="90">
                 <p><img src="img/qt.svg" /></p>
+                <div class="notes">When I heard "Nokia Qt", my first thoughts were:</div>
             </div>
 
             <div id="nokia" class="step yellow" data-x="6750" data-y="5500" data-z="1000" data-rotate-x="90" data-rotate-y="90">
@@ -157,6 +180,7 @@
 
             <div id="github" class="step yellow" data-x="6750" data-y="4000" data-z="2000" data-rotate-x="90" data-rotate-y="90">
                 <p><img src="img/github.png" /></p>
+                <div class="notes">I am no expert - not that difficult, and wonderfully flexible.</div>
             </div>
 
             <div id="travis" class="step yellow" data-x="6750" data-y="5500" data-z="2000" data-rotate-x="90" data-rotate-y="90">
