@@ -89,3 +89,6 @@ strong {
 
 .impress-enabled .step.active { opacity: 1 }
 
+.notes {
+    display: none;
+}
