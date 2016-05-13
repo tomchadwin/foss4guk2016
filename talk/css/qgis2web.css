@@ -34,6 +34,10 @@ strong {
     color: #69c;
 }
 
+.yellow strong {
+    color: #b92;
+}
+
 .slide {
     display: block;
 
