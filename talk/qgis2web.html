@@ -70,7 +70,8 @@
                     <span style="padding-left: 0.4em;">software</span>
                 </p>
                 <div class="notes">I do not like bad software
-                    <strong>at all</strong></div>
+                    <strong>at all</strong>. I <strong>really</strong> don't like bad
+                    software.</div>
             </div>
 
             <div id="nationalpark" class="step blue" data-x="4500" data-y="0">
@@ -78,7 +79,7 @@
                     <span style="padding-left: 1.38em;">I <em>work</em></span><br />
                     <span style="padding-left: 1.5em;">for a</span><br />
                     <strong>National Park</strong></p>
-                <div class="notes">What I do is technical, but the beneficiary
+                <div class="notes">The work I do is technical, but the beneficiary
                     of my work (or "victim") is a cause in which I believe.</div>
             </div>
 
@@ -88,7 +89,10 @@
                     told us to make <strong>webmaps</strong>
                 </p>
                 <div class="notes">...and they paid us a <strong>lot</strong>
-                    of money to do so - IEG, Pendleton</div>
+                    of money to do so. When I joined Durham City Council: IEG,
+                    Pendleton points. Pendleton points make Pendleton prizes.
+                    What do Pendleton points make? The abolition of Durham
+                    City Council.</div>
             </div>
 
             <div id="mapinfo" class="step blue" data-x="7500" data-y="0">
@@ -164,7 +168,8 @@
                 <div class="notes">A brilliant monolithic web GIS, combining
                     server application, viewer, and editing environment.
                     Cross-platform, API bindings for multiple languages (.NET,
-                    Java, PHP). Wonderful.</div>
+                    Java, PHP). Wonderful. But, full-stack, so not everyone's
+                    cup of tea, so...</div>
             </div>
 
             <div id="mapbuilder" class="step green" data-x="6750"
@@ -178,9 +183,9 @@
                     wonderful, but missed the mark in crucial ways:
                         <ul>
                             <li>form-based</li>
-                            <li>no client knowledge of technologies</li>
                             <li>difficult to maintain (eg GeoServer and PostGIS
                                 data out of sync, command-line ogr2ogr)</li>
+                            <li>we had no knowledge of technologies</li>
                             <li>told by developer not to upgrade the component
                                 parts</li>
                             <li>written for us, and while devs intention was to
@@ -225,7 +230,7 @@
             <div id="qgis-ol3" class="step green" data-x="9750"
                  data-y="4000" data-z="-3000">
                 <p><em>qgis</em>-<strong>ol3</strong></p>
-                <div class="notes">Victor Olaya (authoer of QGIS Processing.
+                <div class="notes">Victor Olaya (author of QGIS Processing).
                     With preview window, layer groups. Well coded.</div>
             </div>
 
@@ -236,7 +241,8 @@
                     <em>qgis</em>2<strong>web</strong>
                 </p>
                 <div class="notes">Paolo Cavallini (QGIS PSC) proposed,
-                    Riccardo and Victor agreed, I took it on</div>
+                    Riccardo and Victor agreed, I took it on. What did I have
+                    to learn?</div>
             </div>
 
             <div id="api" class="step yellow" data-x="9750" data-y="4000"
@@ -244,7 +250,7 @@
                 <p><em>QGIS</em> <strong>API</strong></p>
                 <div class="notes">Programmatic access to the functions of a
                     program. I had experience of working with other APIs (MGOS,
-                    Livelink), but QGIS has the best I've come across</div>
+                    Livelink CMS), but QGIS has the best I've come across</div>
             </div>
 
             <div id="python" class="step yellow" data-x="9750" data-y="5500"
@@ -264,9 +270,9 @@
                  data-z="0" data-rotate-x="90" data-rotate-y="90">
                 <p><img src="img/js.png" /></p>
                 <div class="notes">Had coded little bits of JS for years, and
-                    some bigger bits and pieces (EGMS parser, standards-
-                    compliant web-based rich-text editor). By the way,
-                    JS != jQuery.</div>
+                    some bigger bits and pieces (EGMS parser,
+                    standards-compliant web-based rich-text editor). By the
+                    way, JS != jQuery.</div>
             </div>
 
             <div id="ol3" class="step yellow" data-x="9750" data-y="5500"
@@ -281,7 +287,8 @@
             <div id="leaflet" class="step yellow" data-x="9750" data-y="7000"
                  data-z="0" data-rotate-x="90" data-rotate-y="90">
                 <p><img src="img/leaflet.svg" /></p>
-                <div class="notes">Simpler, leaner</div>
+                <div class="notes">Simpler, leaner. All fo this I knew in
+                advance I had to start learning. But there's more...</div>
             </div>
 
             <div id="qt" class="step yellow" data-x="9750" data-y="4000"
@@ -320,7 +327,9 @@
                 <p><img src="img/stacktrace.png" /></p>
                 <div class="notes">Had to learn how to read a stack trace,
                     which had always rather mystified me (see GeoServer's
-                    Tolstoy-like ones).</div>
+                    Tolstoy-like ones which scroll off into the distance like
+                    the Star Wars opening credits). Speaking of stack
+                    traces...</div>
             </div>
 
             <div id="noseagulls" class="step yellow" data-x="9750"
@@ -328,8 +337,8 @@
                  data-rotate-y="90">
                 <p><img src="img/noseagulls.png" /></p>
                 <div class="notes">Sometimes it doesn't work. Because of small
-                    user-base, sometimes these errors crept into releases.
-                    Not good.</div>
+                    user-base, and tiny developer-base, sometimes these errors
+                    crept into releases. Not good.</div>
             </div>
 
             <div id="travis" class="step yellow" data-x="9750" data-y="4000"
@@ -344,20 +353,95 @@
                  data-y="5500" data-z="3000" data-rotate-x="90"
                  data-rotate-y="90">
                 <p><img src="img/buildhistory.png" /></p>
-                <div class="notes">Automatically test against QGIS LTR,
-                current, and nightly</div>
+                <div class="notes">Automatically tests every Github commit and
+                PR  against QGIS LTR, current, and nightly. But the tests you
+                write might miss certain combinations of options a user might
+                select in the software, so...</div>
             </div>
 
             <div id="coveralls" class="step yellow" data-x="9750" data-y="7000"
                  data-z="3000" data-rotate-x="90" data-rotate-y="90">
                 <p><img src="img/coveralls.png" /></p>
-                <div class="notes">The logical conclusion after CI</div>
+                t<div class="notes">Code coverage: The logical conclusion
+                of CI</div>
             </div>
 
             <div id="coverage" class="step yellow" data-x="9750" data-y="8500"
                  data-z="3000" data-rotate-x="90" data-rotate-y="90">
                 <p><img src="img/coverage.png" /></p>
-                <div class="notes">Must try harder</div>
+                <div class="notes">Must try harder: loist of tests still needed
+                is in the README</div>
+            </div>
+
+            <div id="foresttrack" class="step yellow" data-x="9750" data-y="4000"
+                 data-z="4000" data-rotate-x="90" data-rotate-y="90">
+                <iframe src="http://foresttrack.org/db/dashboard1.php" width="1024" height="768"></iframe>
+                <div class="notes">Indonesian forest monitoring</div>
+            </div>
+
+            <div id="naturalprocesses" class="step yellow" data-x="9750" data-y="7000"
+                 data-z="4000" data-rotate-x="90" data-rotate-y="90">
+                <iframe src="http://naturalprocesses.jbahosting.com/" width="1024" height="768"></iframe>
+                <div class="notes">Nature-based flood risk management projects</div>
+            </div>
+
+            <div id="romejubilee" class="step yellow" data-x="9750" data-y="8500"
+                 data-z="4000" data-rotate-x="90" data-rotate-y="90">
+                <iframe src="http://www.romaperilgiubileo.gov.it/cms/en/homepage.page;jsessionid=JxTjF-l0wMfbOj4YXRphAWnY" width="1024" height="768"></iframe>
+                <div class="notes">Jubilee in Rome</div>
+            </div>
+
+            <div id="bencarson" class="step yellow" data-x="9750" data-y="10000"
+                 data-z="4000" data-rotate-x="90" data-rotate-y="90">
+                <iframe src="http://bencarsonfortexas.org/intermap/USCountyContacts/#5/36.915/-95.076" width="1024" height="768"></iframe>
+                <div class="notes">Committee to elect Ben Carson for Republican
+                presidential nominee</div>
+            </div>
+
+            <div id="montrealsewage" class="step yellow" data-x="9750" data-y="11500"
+                 data-z="4000" data-rotate-x="90" data-rotate-y="90">
+                <iframe src="http://www.cbc.ca/news/canada/montreal/montreal-s-sewage-dump-saga-explained-in-5-key-points-1.3263739" width="1024" height="768"></iframe>
+                <div class="notes">Montreal sewage dumping scandal</div>
+            </div>
+
+            <div id="croatianbrownbears" class="step yellow" data-x="9750" data-y="13000"
+                 data-z="4000" data-rotate-x="90" data-rotate-y="90">
+                <iframe src="https://www.rewildingeurope.com/blog/being-an-intern-at-rewilding-europe/" width="1024" height="768"></iframe>
+                <div class="notes">Rewilding in Croatia - brown bears</div>
+            </div>
+
+            <div id="why" class="step orange" data-x="9750" data-y="13000"
+                 data-z="4000" data-rotate-x="90" data-rotate-y="90">
+                <p><strong>Why</strong> do<br />
+                <em style="padding-left: 3em;">all</em> this?</p>
+                <div class="notes">Hopefully it's useful to some people, but
+                also...</div>
+            </div>
+
+            <div id="fun" class="step orange" data-x="9750" data-y="13000"
+                 data-z="4000" data-rotate-x="90" data-rotate-y="90">
+                <p><em>It's</em> <strong>fun</strong>!</p>
+                <div class="notes">Getting code to work is fun. Getting code
+                to work with other software via an API is really satisfying.
+                Joining multiple APIs is incredibly satisfying.</div>
+            </div>
+
+            <div id="rewards" class="step orange" data-x="9750" data-y="13000"
+                 data-z="4000" data-rotate-x="90" data-rotate-y="90">
+                <p><em style="padding-left: 0.38em;">What</em> are the <strong>rewards</strong>?
+                <div class="notes">Speaking personally</div>
+            </div>
+
+            <div id="praise" class="step orange" data-x="9750" data-y="13000"
+                 data-z="4000" data-rotate-x="90" data-rotate-y="90">
+                <img src="img/amazeballs.png" />
+                <div class="notes">Praise</div>
+            </div>
+
+            <div id="pride" class="step orange" data-x="9750" data-y="13000"
+                 data-z="4000" data-rotate-x="90" data-rotate-y="90">
+                <img src="img/projeteof.jpg" />
+                <div class="notes">Praise</div>
             </div>
         </div>
         <script src="js/impress.js"></script>

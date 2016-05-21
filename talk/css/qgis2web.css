@@ -38,6 +38,10 @@ strong {
     color: #b92;
 }
 
+.orange strong {
+    color: #c73;
+}
+
 .slide {
     display: block;
 
