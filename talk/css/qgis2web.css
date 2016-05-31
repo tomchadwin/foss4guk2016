@@ -96,3 +96,19 @@ strong {
 .notes {
     display: none;
 }
+
+.subtext {
+    width: 100%;
+    text-align: right;
+    font-size: 38px;
+    color: #999;
+    transition-delay: 3s;
+}
+
+.future .subtext {
+    visibility: hidden;
+}
+
+.present .subtext {
+    visibility: visible;
+}
