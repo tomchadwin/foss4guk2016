@@ -18,7 +18,15 @@
                 
                     <div style="font-size: 200%; color: #999; padding-left: 16.75em;">@tomchadwin</div>
                 </p>
-                <div class="notes">What do you need to know about me?</div>
+                <div class="notes"><p>qgis2web converts your QGIS projects into
+                        Leaflet or OpenLayers 3 webmaps. Today I'll tell you a
+                        little about how it was built.</p>
+                    <p>In the spirit of open source, I've abandoned Powerpoint
+                        and Prezi for a new presentation framework. The downside
+                        is that it's new to me, so apologies if some of my notes
+                        accidentally appear on-screen.</p>
+                    <p>What do you need to know about me?</p>
+                    </div>
             </div>
 
             <div id="notageographer" class="step red l2" data-x="0" data-y="0">
@@ -53,7 +61,9 @@
                     I <em>do</em> like the<br />
                     <strong style="padding-left: 3.75em;">web</strong>
                 </p>
-                <div class="notes">Well, bits of it</div>
+                <div class="notes">Well, bits of it. Before I did anything to
+                    do with maps, I was a web designer, and then a web
+                    developer.</div>
             </div>
             
             <div id="heartmaps" class="step red l2" data-x="1500" data-y="1000">
@@ -61,8 +71,9 @@
                     I <em>do</em> like<br />
                     <strong style="padding-left: 1.75em;">maps</strong>
                 </p>
-                <div class="notes">My career taken me here by chance -
-                    last job a ittle, and then this one much more</div>
+                <div class="notes">My career has taken me here by chance -
+                    at Durham City Council I found out that GIS existed, and
+                    now at Northumberland NP I get to work with it a tad</div>
             </div>
             
             <div id="notheartbadsoftware" class="step red l3"
@@ -93,7 +104,7 @@
                 </p>
                 <div class="notes">&hellip;and they paid us a <strong>lot</strong>
                     of money to do so. When I joined Durham City Council there
-                    was money for Iimplementing eGovernment (IEG), and for
+                    was money for Implementing eGovernment (IEG), and for
                     online planning. The success of the latter was judged by
                     how many Pendleton points you got. And Pendleton points
                     make Pendleton prizes. What do Pendleton points make? The
@@ -147,7 +158,7 @@
                     But the <em>money</em><br />
                     <strong style="padding-left: 2.25em;">ran out</strong>&hellip;
                 </p>
-                <div class="subtext">Bankers</div>
+                <div class="subtext">Bankers.</div>
                 <div class="notes">Because financial catastrophe.</div>
             </div>
 
@@ -187,17 +198,17 @@
                 </p>
                 <div class="subtext">I hope they don't notice I can't
                 get those logos to arrange nicely</div>
-                <div class="notes">The now traditional open-source spatial
+                <div class="notes"><p>The now traditional open-source spatial
                     stack. Built for NPs by contractors. Nearly wonderful, but
                     missed the mark in crucial ways:
                         <ul>
                             <li>form-based</li>
                             <li>difficult to maintain (eg GeoServer and PostGIS
                                 data out of sync, command-line ogr2ogr)</li>
-                            <li>we had no knowledge of technologies</li>
+                            <li>we had no in-house knowledge of technologies</li>
                             <li>told by developer not to upgrade the component
                                 parts</li>
-                            <li>written for us, and while devs intention was to
+                            <li>written for us, and while devs' intention was to
                                 get others to use it, only ever really used by
                                 us, therefore:
                                 <ul style="list-style-type: disc;">
@@ -207,7 +218,8 @@
                                     <li>no momentum</li>
                                     <li>no community</li>
                                 </ul></li>
-                        </ul>
+                        </ul></p>
+                        <p>Meanwhile&ellip;</p>
                 </div>
             </div>
 
@@ -223,7 +235,7 @@
             <div id="qgis2leaf" class="step green l1" data-x="6750"
                  data-y="4000" data-z="-3000">
                 <p><em>qgis</em>2<strong>leaf</strong></p>
-                <div class="notes">Export your QGIS project to Leaflet. Written
+                <div class="notes">Exports your QGIS project to Leaflet. Written
                     by Riccardo Klinger (Geolicious, digital-geography.com). I
                     contributed a lot to get it to do what we needed (eg WFS
                     layers, British National Grid). Problem was&hellip;</div>
@@ -251,19 +263,20 @@
                 </p>
                 <div class="notes"><p>Paolo Cavallini (QGIS PSC) proposed,
                     Riccardo and Victor agreed, I took it on.</p>
-                    <p>qgis2web makes webmaps by extracting information from QGIS and
-                    writing it out as HTML, CSS, and JS.</p>
-                    <p>What did I have to learn?</p></div>
+                    <p>qgis2web makes webmaps by extracting information from
+                    QGIS and writing it out as HTML, CSS, and JS.</p>
+                    <p>What did I have to learn in order to build it?</p></div>
             </div>
 
             <div id="api" class="step yellow l2" data-x="8750" data-y="4000"
                  data-z="-4000" data-rotate-x="90" data-rotate-z="90">
-                <p><em>QGIS</em> <strong>API</strong></p>
+                <img src="img/qgisapi.png" />
                 <div class="subtext">Remember, Chadwin: not everyone shares
                 your enthusiasm for APIs</div>
-                <div class="notes">Programmatic access to the functions of a
-                    program. I had experience of working with other APIs (MGOS,
-                    Livelink CMS), but QGIS has the best I've come across</div>
+                <div class="notes">The QGIS API. Programmatic access to
+                    the functions of a program. I had experience of working
+                    with other APIs (MGOS, Livelink CMS), but QGIS has the best
+                    I've come across.</div>
             </div>
 
             <div id="python" class="step yellow l2" data-x="8750" data-y="4000"
@@ -317,13 +330,13 @@
             <div id="nokia" class="step yellow l6" data-x="6750" data-y="4000"
                  data-z="-2500" data-rotate-x="90" data-rotate-z="90">
                 <p><img src="img/nokia8210.png" /></p>
-                <div class="notes">That was a great phone</div>
+                <div class="notes">Nokia. That was a great phone</div>
             </div>
 
             <div id="typhoo" class="step yellow l8" data-x="6750" data-y="4000"
                  data-z="-1000" data-rotate-x="90" data-rotate-z="90">
                 <p><img src="img/typhooqt.png" /></p>
-                <div class="notes">Although 100% not a tea drinker, I did code
+                <div class="notes">QT. Although 100% not a tea drinker, I did code
                     a full-screen Flash website for Typhoo about 16 years ago.
                     It had sound files of my accomplished chicken impression.
                 </div>
@@ -333,7 +346,7 @@
                  data-z="-4000" data-rotate-x="90" data-rotate-z="90">
                 <p><img src="img/github.png" /></p>
                 <div class="notes">Had to find out how working on open-source
-                    code works. I am no expert - not that difficult, and
+                    code works. I am no expert - but it's not that difficult, and
                     wonderfully flexible. Sure those of you who went to Jo's
                     workshop will agree.</div>
             </div>
@@ -345,15 +358,14 @@
                 <div class="notes">Had to learn how to read a stack trace,
                     which had always rather mystified me (see GeoServer's
                     Tolstoy-like ones which scroll off into the distance like
-                    the Star Wars opening credits). Speaking of stack
-                    traces&hellip;</div>
+                    the Star Wars intro). Speaking of stack traces&hellip;</div>
             </div>
 
             <div id="noseagulls" class="step yellow l8" data-x="5750"
                  data-y="4000" data-z="-1000" data-rotate-x="90"
                  data-rotate-z="90">
                 <p><img src="img/noseagulls.png" /></p>
-                <div class="notes">Sometimes it doesn't work. Because of small
+                <div class="notes">Sometimes code fails. Because of small
                     user-base, and tiny developer-base, sometimes these errors
                     crept into releases. Not good.</div>
             </div>
@@ -371,7 +383,7 @@
                  data-rotate-z="90">
                 <p><img src="img/buildhistory.png" /></p>
                 <div class="notes">Automatically tests every Github commit and
-                PR  against QGIS LTR, current, and nightly. But the tests you
+                PR against QGIS LTR, current, and nightly. But the tests you
                 write might miss certain combinations of options a user might
                 select in the software, so&hellip;</div>
             </div>
@@ -380,14 +392,16 @@
                  data-z="-1000" data-rotate-x="90" data-rotate-z="90">
                 <p><img src="img/coveralls.png" /></p>
                 <div class="notes">Code coverage: The logical conclusion
-                of CI</div>
+                    of CI</div>
             </div>
 
             <div id="coverage" class="step yellow" data-x="4750" data-y="4000"
                  data-z="500" data-rotate-x="90" data-rotate-z="90">
                 <p><img src="img/coverage.png" /></p>
-                <div class="notes">Must try harder: list of tests still needed
-                is in the README</div>
+                <div class="notes"><p>Must try harder: list of tests still needed
+                    is in the README.</p>
+                    <p>So what has qgis2web been used for?</p>
+                <p></div>
             </div>
 
             <div id="naturalprocesses" class="step yellow" data-x="9750"
@@ -402,7 +416,8 @@
             <div id="romejubilee" class="step yellow" data-x="9750" data-y="5500"
                  data-z="4000" data-rotate-x="90" data-rotate-y="90">
                 <iframe src="http://www.romaperilgiubileo.gov.it/cms/en/homepage.page;jsessionid=JxTjF-l0wMfbOj4YXRphAWnY" width="1024" height="768"></iframe>
-                <div class="notes">Jubilee in Rome</div>
+                <div class="notes">Jubilee in Rome - nice to see a qgis2web
+                    map being integrated into the visual design of a site</div>
             </div>
 
             <div id="bencarson" class="step yellow" data-x="9750" data-y="7000"
@@ -419,7 +434,9 @@
                 <iframe src="http://www.cbc.ca/news/canada/montreal/montreal-s-sewage-dump-saga-explained-in-5-key-points-1.3263739" width="1024" height="768"></iframe>
                 <div class="subtext">Perhaps using effluent as an example
                 wasn't a great idea</div>
-                <div class="notes">Montreal sewage dumping scandal</div>
+                <div class="notes">Montreal sewage dumping scandal - great to
+                    see qgis2web being usd by journalists, and this map was
+                    reused across many Canadian news sites.</div>
             </div>
 
             <div id="croatianbrownbears" class="step yellow" data-x="9750" data-y="10000"
@@ -448,14 +465,14 @@
             <div id="rewards" class="step orange l2" data-x="9750" data-y="12500"
                  data-z="4000">
                 <p><em style="padding-left: 0.38em;">What</em> are the <strong>rewards</strong>?
-                <div class="notes">Speaking personally</div>
+                <div class="notes">Speaking personally&ellip;</div>
             </div>
 
             <div id="praise" class="step orange l4" data-x="11250" data-y="12500"
                  data-z="4000">
                 <img src="img/amazeballs.png" />
                 <div class="notes">The praise of the praiseworthy is above all
-                rewards</div>
+                rewards - thank you, Charley</div>
             </div>
 
             <div id="pride" class="step orange l8" data-x="12750" data-y="12500"
@@ -473,9 +490,9 @@
                 </ul></p></div>
             </div>
 
-            <div id="thanks" class="step orange l2" data-x="12750" data-y="12500"
+            <div id="credits" class="step orange l2" data-x="14250" data-y="12500"
                  data-z="4000">
-                <p><strong>Thanks</strong> to<br /><em style="padding-left: 1em;">everyone</em>
+                <p><strong>Credit</strong> where<br /><span style="padding-left: 2.19em;">it's <em>due</em></span></p>
                 <div class="notes"><ul>
                     <li>QGIS, Leaflet, OpenLayers</li>
                     <li>Riccardo Klinger, Victor Olaya, Luca Casagrande</li>
@@ -486,10 +503,14 @@
                     <li>National Parks, including my own, and Matt Travis here
                     today from Dartmoor</li>
                     <li>Users/bugspotters</li>
-                    <li>FOSS4GUK</li>
-                    <li>You, not least for your patience</li>
-                </ul>
-                <p>Thank you</p>
+                    <li>FOSS4GUK and its volunteers</li>
+                </ul></div>
+            </div>
+
+            <div id="thanks" class="step orange l2" data-x="14250" data-y="12500"
+                 data-z="4000">
+                <p><strong>Thank</strong><br /><em style="padding-left: 2em;">you</em>
+                <div class="notes">
                 <p>Questions?</p></div>
                 <div class="subtext">* applause *</div>
             </div>

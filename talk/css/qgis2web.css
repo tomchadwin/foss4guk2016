@@ -103,7 +103,7 @@ strong {
     font-size: 38px;
     font-family: 'Sorts Mill Goudy', serif;
     line-height: 42px;
-    /*transition-delay: 3s;*/
+    transition-delay: 3s;
     position:absolute;
     right: -450px;
     bottom: -100px;
